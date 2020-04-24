@@ -1,0 +1,103 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background: #f1f1f1;
+}
+/* Styling the header, giving it a height, a background color, and some top padding */
+h1 {
+  font-size: 35px;
+  font-family: Cambria;
+  background-color: whitesmoke;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+html, body{
+  height: 100%;
+}
+.navbar-brand {
+  padding: 10px;
+  background-color:rgb(63, 191, 189);
+  margin-left: 100px;
+  color: honeydew;
+}
+.navbar-light .navbar-brand {
+color: white;
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar {
+  padding: 10px;
+  background: rgb(245, 228, 196);
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  background-color: rgb(202, 120, 151);
+  border-radius: 3px;
+}
+#nav-select {
+  visibility: hidden;
+}
+
+
+/* Giving the .post element margin on 3 sides */
+.col-md-6 {
+  margin-top: 30px;
+  margin-left: 30px;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+}
+.col-md-4{
+  margin-top: 50px;
+  margin-left: 80px;
+
+}
+
+.col-md-10{
+  margin-left: -100px;
+  margin-top: 30px;
+}
+
+p{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.row{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.table-responsive{
+  margin-top: 80px;;
+}
+
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 600px) {
+  .navbar li {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: rgb(153, 81, 182);
+    border-radius: 1px;
+  }
+  .navbar {
+      padding: 3px;
+      background: rgb(245, 228, 196);
+    }
+  .navbar ul {
+    visibility: visible;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+}

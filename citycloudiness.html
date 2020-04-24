@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset = "UTF-8">
+    <title>Latitude Cloudiness</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="container-fluid">
+        <h1>Weather Analysis</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         
+      
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="citylatitude.html">Temperature</a>
+                    <a class="dropdown-item" href="cityhumidity.html">Humidity</a>
+                    <a class="dropdown-item" href="citycloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="WindSpeed.html">WindSpeed</a>
+                  </div>
+              </li>
+            </ul>
+        
+          </div>
+        </nav>
+    </div>
+      <div class="container">
+        <div class="row">
+        
+        <div class ="col-lg-8"> 
+            <img src="Fig3.png"  alt="City Latitude Vs Cloudiness" height=500 width=500>
+        </div>  
+        <div class="row">
+        <div class ="col-md-10">
+          <p>We see that the closer we get to the equator,the sky is clearer. This scatter plot was created using 
+              matplotlib after analyzing almost 500 cities lying across the equator for a prefect vacation. </p> 
+        </div> 
+        </div>  
+        </div>
+      </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
